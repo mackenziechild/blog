@@ -1,0 +1,11 @@
+<h1>New Post</h1>
+
+<%= form_for :post, url: posts_path do |f| %>
+	<%= f.label :title %><br>
+	<%= f.text_field :title %><br>
+	<br>
+	<%= f.label :body %><br>
+	<%= f.text_field :body %><br>
+	<br>
+	<%= f.submit %>
+<% end %>
