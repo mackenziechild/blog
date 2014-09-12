@@ -30,7 +30,9 @@
 			<li><a href="mailto:hey@mackenziechild.me">Email</a></li>
 		</ul>
 
-		<p class="sign_in">Admin Login</p>
+		<% if !user_signed_in? %>
+			<p class="sign_in"><%= link_to "Admin Login", new_user_session_path %></p>
+		<% end %>
 	</div>
 
 	<div id="main_content">
@@ -43,11 +45,12 @@
 				<%= link_to "Back to All Posts", root_path %>
 			<% end %>
 
-
-			<div class="buttons">
-				<button class="button"><%= link_to "New Post", new_post_path %></button>
-				<button class="button">Log Out</button>
-			</div>
+			<% if user_signed_in? %>
+				<div class="buttons">
+					<button class="button"><%= link_to "New Post", new_post_path %></button>
+					<button class="button">Log Out</button>
+				</div>
+			<% end %>
 		</div>
 
 		<% flash.each do |name, msg| %>
