@@ -1,7 +1,15 @@
-== Week 2 of my 12 in 12 Challenge
+# A Simple Rails Blog
 
-My goal with this challenge is to teach myself Ruby on Rails by building a new web app (using rails) each week for 12 weeks.
+### Setup:
+Install Ruby 2.1.1
+Clone repository.
 
-This week I built a simple blog, where I can create posts (as well as edit and delete them), visitors can comment on posts, and I can log in out out.
+`bundle`
 
-{View the demo application here}[http://week-2-blog.herokuapp.com/]
+`rake db:create && rake db:migrate`
+
+`rails s`
+
+Navigate to `http://localhost:3000` and view away.
+
+

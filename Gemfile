@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'devise', '~> 3.3.0'
+gem 'rubocop'
 
 group :development, :test do
 	gem 'sqlite3'
