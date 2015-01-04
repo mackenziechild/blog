@@ -10,14 +10,13 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'devise', '~> 3.3.0'
 gem 'rubocop'
+gem 'pg'
 
 group :development, :test do
-	gem 'sqlite3'
 	gem 'spring'
 end
 
 group :production do
-	gem 'pg'
 	gem 'rails_12factor'
 end
 
